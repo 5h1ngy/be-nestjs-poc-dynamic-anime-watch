@@ -1,11 +1,12 @@
 {
   "name": "service-anime-watch",
-  "version": "0.1.3",
+  "version": "1.0.0",
   "description": "",
   "author": "",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
+    "clean": "rm -rfdv node_modules/ yarn.lock build/ .yarn-cache/",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
