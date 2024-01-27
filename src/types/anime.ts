@@ -1,3 +1,4 @@
+// Enumerations for anime types, statuses, and seasons
 export enum TypesList {
     TV = 'TV',
     MOVIE = 'MOVIE',
@@ -28,11 +29,13 @@ export enum SeasonsList {
 
 export type Season = keyof typeof SeasonsList
 
+// Interface for representing anime seasons
 export interface AnimeSeason {
     season: Season,
     year: number,
 }
 
+// Interface for representing anime details
 export interface Anime {
     sources: Array<string>,
     title: string,
@@ -47,11 +50,13 @@ export interface Anime {
     tags: Array<string>,
 }
 
+// Interface for representing license details
 interface License {
     name: string,
     url: string,
 }
 
+// Interface for representing the entire anime database
 export interface Database {
     license: License,
     repository: string,
